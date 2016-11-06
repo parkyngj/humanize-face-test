@@ -11,7 +11,7 @@ $(function () {
   			]
   		},
   		style: {
-  			fontFamily: '\'Unica One\', sans-serif'
+  			fontFamily: '\'Monaco\', sans-serif'
   		},
   		plotBorderColor: '#606063'
   	},
@@ -205,57 +205,59 @@ $(function () {
 
 // DIVZION OF STUFFS
 
-$(function () {
-    Highcharts.chart('chart-container', {
-        chart: {
-            type: 'column'
-        },
-        title: {
-            text: 'Gender EE Results'
-        },
-        subtitle: {
-            text: 'Date: 11/05/16'
-        },
-        xAxis: {
-            categories: [
-                'Women',
-                'Men',
-                'Transgender'
-            ],
-            crosshair: true
-        },
-        yAxis: {
-            min: 0,
-            title: {
-                text: 'Gucci (mm)'
-            }
-        },
-        tooltip: {
-            headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
-            pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
-                '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
-            footerFormat: '</table>',
-            shared: true,
-            useHTML: true
-        },
-        plotOptions: {
-            column: {
-                pointPadding: 0.2,
-                borderWidth: 0
-            }
-        },
-        series: [{
-            name: 'Pre-survey',
-            data: [3, 6, 4]
-
-        }, {
-            name: 'Post-survey',
-            data: [5, 4, 5]
-
-        }, {
-            name: 'Something else',
-            data: [2, 3, 6]
-
-        }]
-    });
-});
+// $(function () {
+//     // step 1: AJAX request (on page load)
+//     // step 2: create highchart in the callback
+//     Highcharts.chart('chart-container', {
+//         chart: {
+//             type: 'column'
+//         },
+//         title: {
+//             text: 'this is totally a string'
+//         },
+//         subtitle: {
+//             text: 'Date: 11/05/16'
+//         },
+//         xAxis: {
+//             categories: [
+//                 'Women',
+//                 'Men',
+//                 'Transgender'
+//             ],
+//             crosshair: true
+//         },
+//         yAxis: {
+//             min: 0,
+//             title: {
+//                 text: 'Gucci (mm)'
+//             }
+//         },
+//         tooltip: {
+//             headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+//             pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+//                 '<td style="padding:0"><b>{point.y:.1f}</b></td></tr>',
+//             footerFormat: '</table>',
+//             shared: true,
+//             useHTML: true
+//         },
+//         plotOptions: {
+//             column: {
+//                 pointPadding: 0.2,
+//                 borderWidth: 0
+//             }
+//         },
+//         series: [{
+//             name: 'Pre-survey',
+//             data: [3, 6, 4]
+//
+//         }, {
+//             name: 'Post-survey',
+//             data: [5, 4, 5]
+//
+//         }, {
+//             name: 'Something else',
+//             data: [2, 3, 6]
+//
+//         }]
+//     });
+// });
