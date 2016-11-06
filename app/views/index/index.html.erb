@@ -4,13 +4,16 @@ The thing:
   <%= @thing %>
 <% end %>
 
-<form method="post" action="https://calm-bayou-97961.herokuapp.com/tests">
+<form method="post" action="https://humanize-api-test.herokuapp.com/tests">
   <input type="text" name="test[testing_1]">
   <input type="number" name="test[testing_2]">
 
   <input type="submit">
 
-  <input name="authenticity_token"
+  <!-- <input name="authenticity_token"
                type="hidden"
-               value="+ZD9dfD0ROMjDI5e2XK7bVTVGr+XQUrAEKQdfG24zkZA41FK5Opehh48JYNiZgtG06f/TOXnYCsncrmsuWchRw=="/>
+               value="+ZD9dfD0ROMjDI5e2XK7bVTVGr+XQUrAEKQdfG24zkZA41FK5Opehh48JYNiZgtG06f/TOXnYCsncrmsuWchRw=="/> -->
 </form>
+
+  <script src="http://code.highcharts.com/highcharts.js"></script>
+  <div id="chart-container" style="width:50%; height:50%;"></div>
